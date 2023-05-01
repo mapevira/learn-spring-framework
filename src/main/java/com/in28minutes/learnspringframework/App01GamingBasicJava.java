@@ -22,6 +22,9 @@ public class App01GamingBasicJava {
 
         if (log.isInfoEnabled()) {
             log.info((String) context.getBean("name"));
+            log.info(((Integer) context.getBean("age")).toString());
+            log.info(context.getBean("person").toString());
+            log.info(context.getBean("address").toString());
         }
 
     }

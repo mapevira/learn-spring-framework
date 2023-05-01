@@ -18,4 +18,23 @@ public class HelloWorldConfiguration {
         return "Raul";
     }
 
+    @Bean
+    public int age() {
+        return 15;
+    }
+
+    @Bean
+    public Person person() {
+        return new Person("Raul", 20);
+    }
+
+    @Bean
+    public Address address() {
+        return new Address("Baker Street", "Longon");
+    }
+
 }
+
+record Person (String name, int age) {}
+
+record Address (String firstLine, String city) {}
