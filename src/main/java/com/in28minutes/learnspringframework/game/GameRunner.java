@@ -1,23 +1,26 @@
-/**
- * 
- */
 package com.in28minutes.learnspringframework.game;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
- * @author raulp
+ * The Game Runner class.
  *
+ * @author Architecture - raulp
+ * @since jdk 1.17
+ * @version 1 May 2023 - 15:25:52
  */
+@Slf4j
 public class GameRunner {
 
-    private SuperContraGame game;
+    private GamingConsole game;
 
-    public GameRunner(SuperContraGame game) {
+    public GameRunner(GamingConsole game) {
         super();
         this.game = game;
     }
 
     public void run() {
-        System.out.println("Running game: " + game);
+        log.info("Running game: " + game);
         game.up();
         game.down();
         game.left();

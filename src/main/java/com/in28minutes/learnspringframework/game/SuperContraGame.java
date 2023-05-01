@@ -1,21 +1,35 @@
 package com.in28minutes.learnspringframework.game;
 
-public class SuperContraGame {
+import lombok.extern.slf4j.Slf4j;
 
+/**
+ * The Super Contra Game class.
+ *
+ * @author Architecture - raulp
+ * @since jdk 1.17
+ * @version 1 May 2023 - 15:26:33
+ */
+@Slf4j
+public class SuperContraGame implements GamingConsole {
+
+    @Override
     public void up() {
-        System.out.println("Up");
+        log.info("Up");
     }
 
+    @Override
     public void down() {
-        System.out.println("Sit down");
+        log.info("Sit down");
     }
 
+    @Override
     public void left() {
-        System.out.println("Go back");
+        log.info("Go back");
     }
 
+    @Override
     public void right() {
-        System.out.println("Shoot a bullet");
+        log.info("Shoot a bullet");
     }
 
 }
