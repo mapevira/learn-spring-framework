@@ -6,13 +6,13 @@ import com.in28minutes.learnspringframework.game.PacmanGame;
 import com.in28minutes.learnspringframework.game.SuperContraGame;
 
 /**
- * The AppGamingBasicJava main class.
+ * The App01GamingBasicJava main class.
  *
  * @author Architecture - raulp
  * @since jdk 1.17
  * @version 1 May 2023 - 15:17:15
  */
-public class AppGamingBasicJava {
+public class App02HelloWorldSpring {
 
     /**
      * @param args
