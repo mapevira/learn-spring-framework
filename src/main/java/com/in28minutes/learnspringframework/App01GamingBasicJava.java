@@ -24,7 +24,11 @@ public class App01GamingBasicJava {
             log.info((String) context.getBean("name"));
             log.info(((Integer) context.getBean("age")).toString());
             log.info(context.getBean("person").toString());
-            log.info(context.getBean("address").toString());
+            log.info(context.getBean("addressTo").toString());
+            log.info((context.getBean(Address.class)).toString());
+            log.info(context.getBean("person2MethodCall").toString());
+            log.info(context.getBean("person3Parameters").toString());
+
         }
 
     }
