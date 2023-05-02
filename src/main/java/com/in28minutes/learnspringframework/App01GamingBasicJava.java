@@ -1,5 +1,7 @@
 package com.in28minutes.learnspringframework;
 
+import java.util.Arrays;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import lombok.extern.slf4j.Slf4j;
@@ -29,6 +31,7 @@ public class App01GamingBasicJava {
             log.info(context.getBean("person2MethodCall").toString());
             log.info(context.getBean("person3Parameters").toString());
 
+            Arrays.stream(context.getBeanDefinitionNames()).forEach(bean -> log.info(bean));
         }
 
     }
